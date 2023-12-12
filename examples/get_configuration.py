@@ -11,11 +11,19 @@
 
 from lora_e32 import LoRaE32, print_configuration, Configuration
 from lora_e32_operation_constant import ResponseStatusCode
-from machine import UART
+from machine import UART, Pin
 
-uart2 = UART(2)
+# Create a UART object to communicate with the LoRa module with ESP32
+# uart2 = UART(2)
+# Create a LoRaE32 object, passing the UART object and pin configurations
+# lora = LoRaE32('433T20D', uart2, aux_pin=15, m0_pin=21, m1_pin=19)
 
-lora = LoRaE32('433T20D', uart2, aux_pin=15, m0_pin=21, m1_pin=19)
+# Create a UART object to communicate with the LoRa module with Raspberry Pi Pico
+#uart2 = UART(1)
+# Use the Serial1 pins of Arduino env on the Raspberry Pi Pico
+uart2 = UART(1, rx=Pin(9), tx=Pin(8))
+
+lora = LoRaE32('433T20D', uart2, aux_pin=2, m0_pin=10, m1_pin=11)
 
 code = lora.begin()
 print("Initialization: {}", ResponseStatusCode.get_description(code))

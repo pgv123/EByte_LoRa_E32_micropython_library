@@ -18,13 +18,10 @@
 
 #### A complete tutorial on my site www.mischianti.org
 
-1.  [LoRa E32 device for Arduino, esp32 or esp8266: settings and basic usage](https://www.mischianti.org/2019/10/15/lora-e32-device-for-arduino-esp32-or-esp8266-specs-and-basic-usage-part-1/)
-2.  [LoRa E32 device for Arduino, esp32 or esp8266: library](https://www.mischianti.org/2019/10/21/lora-e32-device-for-arduino-esp32-or-esp8266-library-part-2/)
-3.  [LoRa E32 device for Arduino, esp32 or esp8266: configuration](https://www.mischianti.org/2019/10/29/lora-e32-device-for-arduino-esp32-or-esp8266-configuration-part-3/)
-4.  [LoRa E32 device for Arduino, esp32 or esp8266: fixed transmission](https://www.mischianti.org/2019/11/10/lora-e32-device-for-arduino-esp32-or-esp8266-fixed-transmission-part-4/)
-5.  [LoRa E32 device for Arduino, esp32 or esp8266: power saving and sending structured data](https://www.mischianti.org/2019/12/03/lora-e32-device-for-arduino-esp32-or-esp8266-power-saving-and-sending-structured-data-part-5/)
-6.  [LoRa E32 device for Arduino, esp32 or esp8266: WOR (wake on radio) the microcontroller and Arduino shield](https://www.mischianti.org/2019/12/28/lora-e32-device-for-arduino-esp32-or-esp8266-wor-wake-on-radio-the-microcontroller-also-and-new-arduino-shield-part-6/)
-7.  [LoRa E32 device for Arduino, esp32 or esp8266: WOR (wake on radio) microcontroller and new WeMos D1 mini shield](https://www.mischianti.org/2020/01/17/lora-e32-device-for-arduino-esp32-or-esp8266-wor-wake-on-radio-microcontroller-and-new-wemos-d1-mini-shield-part-7/)
+1. [EByte LoRa E32 & MicroPython: specifications, overview and first use](https://mischianti.org/2023/09/04/ebyte-lora-e32-micropython-specifications-overview-and-first-use-1/)
+2. [EByte LoRa E32 & MicroPython: exploring MicroPython library](https://mischianti.org/ebyte-lora-e32-micropython-exploring-library-2/)
+2. [EByte LoRa E32 & MicroPython: detailed look at the configuration](https://mischianti.org/ebyte-lora-e32-micropython-a-detailed-look-at-configuration-3/)
+2. [EByte LoRa E32 & MicroPython: a deep dive into transmission types](https://mischianti.org/ebyte-lora-e32-micropython-a-deep-dive-into-transmission-types-4/)
 
 ### Changelog
  - 2023-05-02 0.0.4 Fix 900Mhz devices frequency

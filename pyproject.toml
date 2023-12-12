@@ -1,0 +1,31 @@
+[project]
+name = "ebyte-lora-e32"
+version = "0.0.4"
+authors = [
+  { name="Renzo Mischianti", email="renzo@mischianti.org" },
+]
+maintainers = [
+  { name="Renzo Mischianti", email="renzo@mischianti.org" },
+]
+keywords = ["lora", "e32", "ebyte", "llcc68", "micropython", "esp32", "esp8266", "arduino", "pico", 'stm32', 'SAMD',  'UART', 'EByte']
+license = {file = "LICENSE.md"}
+description = "Ebyte E32 LoRa micropython library device very cheap and very long range (from 3Km to 8Km). Arduino LoRa EBYTE E32 device library complete and tested with Arduino, esp8266, esp32, STM32 and Raspberry Pi Pico. sx1278/sx1276."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Programming Language :: Python :: Implementation :: MicroPython",
+        "License :: OSI Approved :: MIT License",
+    ]
+
+[project.urls]
+homepage = "https://www.mischianti.org"
+"Documentation" = "https://www.mischianti.org/category/my-libraries/lora-e32-devices/"
+"Documentazione" = "https://www.mischianti.org/it/category/le-mie-librerie/dispositivi-lora-e32/"
+"Repository" = "https://github.com/xreef/EByte_LoRa_E32_micropython_library"
+"Bug Tracker" = "https://github.com/xreef/EByte_LoRa_E32_micropython_library/issues"
+"Examples" = "https://github.com/xreef/EByte_LoRa_E32_micropython_library/tree/main/examples"
+# pyproject.toml file specified at the root of the directory
+[build-system]
+requires = ["setuptools>=42", "wheel"]   # PEP 508 specifications.
+build-backend = "setuptools.build_meta"

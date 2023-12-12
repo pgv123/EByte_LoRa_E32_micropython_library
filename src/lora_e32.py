@@ -9,6 +9,16 @@
 #
 # This library implements the EBYTE LoRa E32 Series for MicroPython.
 #
+# |-----------------------------------------------------|
+# | M0                                                  |
+# | M1                                                  |
+# | RXD                                                 |
+# | TXD                                                 |
+# | AUX                                                 |-------------|
+# | VCC                                                 |             |
+# | GND                                                 |             |
+# |-----------------------------------------------------|-------------|
+#
 # The MIT License (MIT)
 #
 # Copyright (c) 2019 Renzo Mischianti www.mischianti.org All right reserved.
@@ -453,6 +463,10 @@ class LoRaE32:
         data = self.uart.read()
 
         if data is None or len(data) != 6:
+            if data is not None:
+                logger.debug("data: {}".format(data))
+                logger.debug("data len: {}".format(len(data)))
+
             code = ResponseStatusCode.ERR_E32_DATA_SIZE_NOT_MATCH
             return code, None
 
