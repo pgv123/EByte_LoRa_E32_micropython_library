@@ -21,9 +21,8 @@ from machine import UART, Pin
 # Create a UART object to communicate with the LoRa module with Raspberry Pi Pico
 #uart2 = UART(1)
 # Use the Serial1 pins of Arduino env on the Raspberry Pi Pico
-uart2 = UART(1, rx=Pin(9), tx=Pin(8))
-
-lora = LoRaE32('433T20D', uart2, aux_pin=2, m0_pin=10, m1_pin=11)
+uart1 = UART(1, baudrate=9600)
+lora = LoRaE32('433T20D', uart1, m0_pin=21, m1_pin=22)
 
 code = lora.begin()
 print("Initialization: {}", ResponseStatusCode.get_description(code))

@@ -18,8 +18,8 @@ from lora_e32_constants import FixedTransmission
 from lora_e32_operation_constant import ResponseStatusCode
 
 # Initialize the LoRaE32 module
-uart2 = UART(2)
-lora = LoRaE32('433T20D', uart2, aux_pin=15, m0_pin=21, m1_pin=19)
+uart1 = UART(1, baudrate=9600)
+lora = LoRaE32('433T20D', uart1, m0_pin=21, m1_pin=22)
 code = lora.begin()
 print("Initialization: {}", ResponseStatusCode.get_description(code))
 

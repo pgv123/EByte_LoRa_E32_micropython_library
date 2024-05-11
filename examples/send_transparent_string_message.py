@@ -8,14 +8,14 @@
 # Note: This code was written and tested using MicroPython on an ESP32 board.
 #       It works with other boards, but you may need to change the UART pins.
 
-from lora_e32 import LoRaE32, Configuration
+from lora_e32 import Logger, LoRaE32, Configuration
 from machine import UART
 
 from lora_e32_operation_constant import ResponseStatusCode
 
 # Initialize the LoRaE32 module
 uart1 = UART(1, baudrate=9600)
-lora = LoRaE32('433T20D', uart1, aux_pin=15, m0_pin=21, m1_pin=19)
+lora = LoRaE32('433T20D', uart1, m0_pin=21, m1_pin=22)
 code = lora.begin()
 print("Initialization: {}", ResponseStatusCode.get_description(code))
 
